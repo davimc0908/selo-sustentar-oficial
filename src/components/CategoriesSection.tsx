@@ -4,7 +4,7 @@ const CategoriesSection = () => {
   const categories = [
     {
       level: "Bronze",
-      image: "/lovable-uploads/1ad3de27-dfe1-49ae-84c5-34cc0c232a24.png",
+      image: "/lovable-uploads/f3c18599-45df-423f-8a46-566be8d68a44.png",
       percentage: "Até 50%",
       description: "Compromisso de melhoria contínua",
       details: "Reconhecimento inicial do comprometimento com práticas sustentáveis e ESG.",
@@ -14,7 +14,7 @@ const CategoriesSection = () => {
     },
     {
       level: "Prata",
-      image: "/lovable-uploads/23719eb4-c2fa-4039-bde5-ae3777fd116c.png",
+      image: "/lovable-uploads/41a800cc-40fb-4e74-bf47-8ef30eb3839c.png",
       percentage: "50% a 70%",
       description: "Implementação significativa",
       details: "Nível intermediário com práticas sustentáveis bem estabelecidas na propriedade.",
@@ -24,7 +24,7 @@ const CategoriesSection = () => {
     },
     {
       level: "Ouro",
-      image: "/lovable-uploads/e5c34755-c37a-41e3-9b8b-c20cdf32d1fc.png",
+      image: "/lovable-uploads/0dbde77e-abb8-4869-a4f7-cf46f3f94573.png",
       percentage: "Acima de 71%",
       description: "Excelência em sustentabilidade",
       details: "Máximo nível de certificação, representando liderança em práticas ESG.",
