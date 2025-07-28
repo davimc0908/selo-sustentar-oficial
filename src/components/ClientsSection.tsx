@@ -40,11 +40,15 @@ const ClientsSection = () => {
 
   const ClientCard = ({ client }: { client: Cliente }) => {
     const card = (
-      <div className="rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border bg-background">
+      <div className="rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border bg-background min-h-[120px] flex items-center justify-center">
         <img 
           src={client.logo_url} 
-          alt={client.nome} 
-          className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" 
+          alt={`Logo da empresa ${client.nome}`} 
+          className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" 
+          onError={(e) => {
+            console.error(`Erro ao carregar imagem para ${client.nome}:`, client.logo_url);
+            e.currentTarget.style.display = 'none';
+          }}
         />
       </div>
     );
