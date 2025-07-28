@@ -50,7 +50,7 @@ WhatsApp: ${formData.whatsapp}
 
     // Open WhatsApp with pre-filled message
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappUrl = `https://wa.me/5527999323149?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/5532988690622?text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
     
