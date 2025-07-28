@@ -39,12 +39,24 @@ const ContactSection = () => {
       return;
     }
 
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
+    // Format WhatsApp message
+    const whatsappMessage = `Olá, me chamo ${formData.nome}
+Propriedade: ${formData.propriedade}
+Localização: ${formData.localizacao}
+E-mail: ${formData.email}
+WhatsApp: ${formData.whatsapp}
+
+📝 ${formData.mensagem}`;
+
+    // Open WhatsApp with pre-filled message
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/5527999323149?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
     
     toast({
-      title: "Solicitação enviada!",
-      description: "Em breve entraremos em contato para iniciar o processo de certificação.",
+      title: "Redirecionando para WhatsApp",
+      description: "Sua mensagem foi preparada automaticamente.",
     });
 
     // Reset form
